@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/food-recomendations/static/css/main.dd0ea50f.css",
+    "main.js": "/food-recomendations/static/js/main.da01b8e5.js",
+    "static/media/wood-texture.jpg": "/food-recomendations/static/media/wood-texture.fbafdff06ebc188e2ab3.jpg",
+    "static/media/recipes.png": "/food-recomendations/static/media/recipes.7295787a22b957ee250e.png",
+    "index.html": "/food-recomendations/index.html",
+    "main.dd0ea50f.css.map": "/food-recomendations/static/css/main.dd0ea50f.css.map",
+    "main.da01b8e5.js.map": "/food-recomendations/static/js/main.da01b8e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd0ea50f.css",
+    "static/js/main.da01b8e5.js"
+  ]
+}
