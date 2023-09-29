@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import BegPage from './components/BegPage';
 import RecipePage from './components/RecipePage';
 import Grid from '@mui/material/Grid';
