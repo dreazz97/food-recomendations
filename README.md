@@ -14,11 +14,18 @@ This application is built using a variety of modern technologies:
 
 ## Getting Started 🚀
 
-1. Clone the repository
-2. Install dependencies with `npm install`
-3. Start the server with `npm start`
-4. Enjoy your Recipe Finder App!
+To get started with the Foodie Helper App, follow these steps:
 
-Or access the link: https://dreazz97.github.io/food-recomendations
+1. Clone the repository.
+2. Create a .env file in the root directory of the project and add the following values:
+    ```
+    REACT_APP_API_KEY= <YOUR API KEY>
+    REACT_APP_APP_ID= <YOUR APP ID>
+    ```
+3. Install dependencies with `npm install`.
+4. Start the server with `npm start`.
+5. Enjoy your Recipe Finder App!
+
+You can also access the APP directly via this link: https://dreazz97.github.io/food-recomendations
 
 Enjoy! 🎉
