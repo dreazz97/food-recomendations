@@ -32,6 +32,11 @@
   padding-left: 10px;
 }
 
+#description-usage {
+  text-align: center;
+  color: rgb(100, 97, 97);
+}
+
 #search-bar:focus {
   outline-width: thin;
 }
@@ -86,6 +91,12 @@ body {
   }
 }
 
+@media screen and (max-width: 820px) {
+  #description-usage {
+    font-size: 0.8em;
+  }
+}
+
 @media screen and (max-width: 657px) {
   #recipe-img {
     width: 50%;
@@ -106,6 +117,9 @@ body {
     font-size: 1.7em;
   }
   #search-bar {
+    font-size: 0.7em;
+  }
+  #description-usage {
     font-size: 0.7em;
   }
 }
