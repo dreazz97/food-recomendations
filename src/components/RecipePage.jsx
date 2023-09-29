@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import RecipeComp from './RecipeComp';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Grid from '@mui/material/Grid';
+import robotImg from '../images/robot-404.png'
 
 const RecipePage = () => {
     const location = useLocation();
@@ -39,7 +40,10 @@ const RecipePage = () => {
         />
         ))
       ) : (
+        <>
         <p id='no-results' className='descriptions'>Oops... Seems like your query didn't match any results</p>
+        <img id='robot-img' src={robotImg} alt="robot" />
+        </>
       )}
     </>
   );

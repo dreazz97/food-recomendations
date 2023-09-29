@@ -41,6 +41,14 @@
   margin-top: 100px;
 }
 
+#robot-img {
+  margin-top: 30px;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #search-bar:focus {
   outline-width: thin;
 }
@@ -64,12 +72,13 @@
 
 #Back-arrow {
   margin-top: 40px;
+  color: rgb(107, 102, 102);
 }
 
 
 #Back-arrow:hover{
   cursor:pointer;
-  color: rgb(107, 102, 102);
+  color: black;
 }
 
 #social-container {
@@ -93,17 +102,26 @@ body {
   #recipe-img {
     width: 40%;
   }
+  #robot-img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 820px) {
   #description-usage {
     font-size: 0.8em;
   }
+  #robot-img {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 657px) {
   #recipe-img {
     width: 50%;
+  }
+  #robot-img {
+    width: 55%;
   }
 }
 
@@ -125,5 +143,8 @@ body {
   }
   #description-usage {
     font-size: 0.7em;
+  }
+  #robot-img {
+    width: 70%;
   }
 }
