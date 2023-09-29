@@ -12,12 +12,18 @@ const BegPage = () => {
         navigate('/recipe', { state: { inputValue } });
     };
 
+    const handleKeyDown = (event) => {
+      if (event.key === 'Enter') {
+          handleSearchClick();
+      }
+   };
+
   return (
     <>
     <h1 id='title'>Foodie Helper</h1>
     <img id='recipe-img' src={recipeimage} alt="recipe img" />
     <div id='search-container'>
-    <input ref={inputRef} id='search-bar' type="text" />
+    <input ref={inputRef} id='search-bar' type="text" onKeyDown={handleKeyDown} />
     <SearchIcon id='search-icon' onClick={handleSearchClick} />
     </div>
     <p className='descriptions'>Search for any recipe based on its name or the ingredients</p>
