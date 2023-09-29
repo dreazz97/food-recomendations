@@ -4,11 +4,13 @@ import RecipeComp from './RecipeComp';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Grid from '@mui/material/Grid';
 import robotImg from '../images/robot-404.png'
+import loading from '../images/loading.png'
 
 const RecipePage = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const [dataRecipes, setDataRecipes] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         async function fetchData() {
@@ -16,6 +18,7 @@ const RecipePage = () => {
             const responserecipes = await fetch(url);
             const datarecipes = await responserecipes.json();
             setDataRecipes(datarecipes.hits || []);
+            setIsLoading(false);
         }
         fetchData();
       }, [location.state.inputValue])
@@ -33,20 +36,21 @@ const RecipePage = () => {
         <ArrowBackIosIcon id="Back-arrow" onClick={handleBackClick} />
       </Grid>
     </Grid>
-    {dataRecipes && dataRecipes.length > 0 ? (
-    dataRecipes.map((el, index) => (
+    {isLoading ? (
+      <img id='loading' src={loading} alt="loading" />
+    ) : dataRecipes && dataRecipes.length > 0 ? (
+      dataRecipes.map((el, index) => (
         <RecipeComp key={index} label={el.recipe.label} image={el.recipe.image} calories={el.recipe.calories} source={el.recipe.url} prepartime={el.recipe.totalTime}
-        dietLabels={el.recipe.dietLabels} ingredients={el.recipe.ingredientLines}
-        />
-        ))
-      ) : (
+        dietLabels={el.recipe.dietLabels} ingredients={el.recipe.ingredientLines} />
+      ))
+    ) : (
         <>
         <p id='no-results' className='descriptions'>Oops... Seems like your query didn't match any results</p>
         <img id='robot-img' src={robotImg} alt="robot" />
         </>
-      )}
-    </>
-  );
+    )}
+  </>
+);
 }
 
 export default RecipePage
