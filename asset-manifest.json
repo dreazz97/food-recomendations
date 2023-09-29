@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/food-recomendations/static/css/main.ca4aff1f.css",
-    "main.js": "/food-recomendations/static/js/main.cf24fc0e.js",
+    "main.css": "/food-recomendations/static/css/main.80309b32.css",
+    "main.js": "/food-recomendations/static/js/main.0335c002.js",
     "static/media/wood-texture.jpg": "/food-recomendations/static/media/wood-texture.fbafdff06ebc188e2ab3.jpg",
     "static/media/recipes.png": "/food-recomendations/static/media/recipes.7295787a22b957ee250e.png",
     "index.html": "/food-recomendations/index.html",
-    "main.ca4aff1f.css.map": "/food-recomendations/static/css/main.ca4aff1f.css.map",
-    "main.cf24fc0e.js.map": "/food-recomendations/static/js/main.cf24fc0e.js.map"
+    "main.80309b32.css.map": "/food-recomendations/static/css/main.80309b32.css.map",
+    "main.0335c002.js.map": "/food-recomendations/static/js/main.0335c002.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca4aff1f.css",
-    "static/js/main.cf24fc0e.js"
+    "static/css/main.80309b32.css",
+    "static/js/main.0335c002.js"
   ]
 }
