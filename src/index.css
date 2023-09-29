@@ -32,9 +32,13 @@
   padding-left: 10px;
 }
 
-#description-usage {
+.descriptions {
   text-align: center;
   color: rgb(100, 97, 97);
+}
+
+#no-results {
+  margin-top: 100px;
 }
 
 #search-bar:focus {

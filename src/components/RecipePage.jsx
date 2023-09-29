@@ -32,12 +32,17 @@ const RecipePage = () => {
         <ArrowBackIosIcon id="Back-arrow" onClick={handleBackClick} />
       </Grid>
     </Grid>
-    {dataRecipes.map((el, index) => (
+    {dataRecipes && dataRecipes.length > 0 ? (
+    dataRecipes.map((el, index) => (
         <RecipeComp key={index} label={el.recipe.label} image={el.recipe.image} calories={el.recipe.calories} source={el.recipe.url} prepartime={el.recipe.totalTime}
-        dietLabels={el.recipe.dietLabels} ingredients={el.recipe.ingredientLines} />
-    ))}
+        dietLabels={el.recipe.dietLabels} ingredients={el.recipe.ingredientLines}
+        />
+        ))
+      ) : (
+        <p id='no-results' className='descriptions'>Oops... Seems like your query didn't match any results</p>
+      )}
     </>
-  )
+  );
 }
 
 export default RecipePage

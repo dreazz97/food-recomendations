@@ -20,7 +20,7 @@ const BegPage = () => {
     <input ref={inputRef} id='search-bar' type="text" />
     <SearchIcon id='search-icon' onClick={handleSearchClick} />
     </div>
-    <p id='description-usage'>Search for any recipe based on its name or the ingredients</p>
+    <p className='descriptions'>Search for any recipe based on its name or the ingredients</p>
     </>
   )
 }
