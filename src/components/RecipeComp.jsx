@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -9,8 +9,11 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import loading from '../images/loading.png'
 
 const RecipeComp = ({label, image, calories, source, prepartime, ingredients, dietLabels}) => {
+
+    const [isImageLoading, setIsImageLoading] = useState(true);
 
     const ExpandMore = styled((props) => {
         const { expand, ...other } = props;
@@ -35,11 +38,14 @@ const RecipeComp = ({label, image, calories, source, prepartime, ingredients, di
         title={label}
         titleTypographyProps={{variant:'h5', sx:{fontFamily:"Martian Mono", fontWeight: 800}}}
       />
+      {isImageLoading && <img id='loading-img' src={loading} alt="loading" />}
       <CardMedia
         component="img"
         height="194"
         image={image}
         alt="imgs"
+        style={{ display: isImageLoading ? 'none' : 'block' }}
+        onLoad={() => setIsImageLoading(false)}
       />
       <CardContent>
       <Typography variant="body2" color="black" fontFamily="Martian Mono">
