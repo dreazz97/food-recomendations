@@ -11,7 +11,7 @@ const RecipePage = () => {
 
     useEffect(() => {
         async function fetchData() {
-            let url = `https://api.edamam.com/api/recipes/v2?type=public&q=${encodeURIComponent(location.state.inputValue)}&app_id=daf72077&app_key=0ee1183d87b5902ce2069947ce94b7c1`
+            let url = `https://api.edamam.com/api/recipes/v2?type=public&q=${encodeURIComponent(location.state.inputValue)}&app_id=${process.env.REACT_APP_APP_ID}&app_key=${process.env.REACT_APP_API_KEY}`
             const responserecipes = await fetch(url);
             const datarecipes = await responserecipes.json();
             setDataRecipes(datarecipes.hits || []);
