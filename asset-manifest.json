@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/food-recomendations/static/css/main.efe12099.css",
-    "main.js": "/food-recomendations/static/js/main.0dd995a6.js",
+    "main.css": "/food-recomendations/static/css/main.7b02f298.css",
+    "main.js": "/food-recomendations/static/js/main.2da3afe3.js",
     "static/media/wood-texture.jpg": "/food-recomendations/static/media/wood-texture.fbafdff06ebc188e2ab3.jpg",
+    "static/media/robot-404.png": "/food-recomendations/static/media/robot-404.40d1fcd97948162d3a23.png",
     "static/media/recipes.png": "/food-recomendations/static/media/recipes.7295787a22b957ee250e.png",
     "index.html": "/food-recomendations/index.html",
-    "main.efe12099.css.map": "/food-recomendations/static/css/main.efe12099.css.map",
-    "main.0dd995a6.js.map": "/food-recomendations/static/js/main.0dd995a6.js.map"
+    "main.7b02f298.css.map": "/food-recomendations/static/css/main.7b02f298.css.map",
+    "main.2da3afe3.js.map": "/food-recomendations/static/js/main.2da3afe3.js.map"
   },
   "entrypoints": [
-    "static/css/main.efe12099.css",
-    "static/js/main.0dd995a6.js"
+    "static/css/main.7b02f298.css",
+    "static/js/main.2da3afe3.js"
   ]
 }
