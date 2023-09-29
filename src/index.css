@@ -79,3 +79,33 @@ body {
   font-family: 'Martian Mono';
   background-image: url('./images/wood-texture.jpg');
 }
+
+@media screen and (max-width: 1135px) {
+  #recipe-img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  #recipe-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #Card {
+    max-width: 287px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #recipe-img {
+    width: 70%;
+  }
+  #title {
+    font-size: 1.7em;
+  }
+  #search-bar {
+    font-size: 0.7em;
+  }
+}

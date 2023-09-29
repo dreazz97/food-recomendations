@@ -20,12 +20,12 @@ function App() {
     <Router>
       <div className="App">
       <Grid id="social-container" container justifyContent="flex-end">
-      <Grid item xs={10} sm={10} md={10} lg={10}>
+      <Grid item xs={8} sm={7} md={10} lg={10}>
       </Grid>
-        <Grid item xs={1} sm={1}>
+        <Grid item xs={2} sm={2} md={1}>
         <LinkedInIcon onClick={handleLinkedinRedi} sx={{ marginRight: 0, fontSize: 40, color: "#0e76a8",':hover':{color: '#094c6b', cursor: "pointer"} }}/>
       </Grid>
-      <Grid item xs={1} sm={1}>
+      <Grid item xs={1} sm={1} md={1}>
       <GitHubIcon onClick={handleGithubRedi} sx={{ marginRight: 0, fontSize: 40,':hover':{color: 'grey', cursor: "pointer"} }}/>
       </Grid>
     </Grid>
