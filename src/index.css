@@ -69,6 +69,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+#main-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 43%;
+}
 
 #Back-arrow {
   margin-top: 40px;
@@ -123,6 +129,36 @@ a:hover {
 body {
   font-family: 'Martian Mono';
   background-image: url('./images/wood-texture.jpg');
+}
+
+@media screen and (max-width: 1650px) {
+  #main-container {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1461px) {
+  #main-container {
+    width: 53%;
+  }
+}
+
+@media screen and (max-width: 1329px) {
+  #main-container {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 1212px) {
+  #main-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #main-container {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1135px) {
